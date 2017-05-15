@@ -16,7 +16,7 @@ public class Incrementer implements Runnable {
 		// TODO Auto-generated method stub
 		while (true){
 			synchronized(this.mutex){
-				if(this.count.counter < 20){
+				if(this.count.counter < 10000){
 					this.count.counter++;
 					System.out.println("#" + this.id + " incremented count to " + this.count.counter);
 				} else {
